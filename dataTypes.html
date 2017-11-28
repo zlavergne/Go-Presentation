@@ -288,7 +288,7 @@
         
   <ul>
   
-    <li>Member visibility follows </li>
+    <li>Member visibility is based on capitalization. Lower-case is restricted to the same package, and capitalized is public.</li>
   
     <li>Anonymous structs are allowed:</li>
   
@@ -301,7 +301,7 @@
 <span num="6">    length int</span>
 <span num="7">    width int</span>
 <span num="8">    height int</span>
-<span num="9">}{5,5, 5}</span>
+<span num="9">}{5, 5, 5}</span>
 </pre>
 
 
@@ -332,50 +332,6 @@
   
       <article>
       
-        <h3>Interfaces and Channels</h3>
-        
-  
-  <p>
-    <b>Interfaces</b>
-  </p>
-  
-
-  <ul>
-  
-    <li>Specifies a set of methods that a struct must define</li>
-  
-    <li><code>interface{}</code> matches all types since all types implement 0 or more methods. Equivalent to <code>void*</code> in C.</li>
-  
-  </ul>
-
-  
-  <p>
-    <b>Channels</b>
-  </p>
-  
-
-  <ul>
-  
-    <li>Mechanism for communication between functions executing concurrently</li>
-  
-    <li>Defines a direction of information and the type of the messages being sent</li>
-  
-  </ul>
-
-  
-  <div class="code"><pre>chan   int  // Integers can be sent or received
-chan&lt;- int  // Integers can only be sent
-&lt;-chan int  // Integers can only be received</pre></div>
-  
-
-      
-      <div class="pagenumber">[8]</div>
-      </article>
-  
-  
-  
-      <article>
-      
         <h3>References</h3>
         
   
@@ -388,7 +344,7 @@ chan&lt;- int  // Integers can only be sent
   
 
       
-      <div class="pagenumber">[9]</div>
+      <div class="pagenumber">[8]</div>
       </article>
   
   

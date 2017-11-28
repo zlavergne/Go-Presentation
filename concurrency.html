@@ -75,7 +75,13 @@
         
   
   <p>
-    Remember that channels declare the direction of the flow of values.
+    Channels are a convenient way to communicate between concurrently executing functions.
+  </p>
+  
+
+  
+  <p>
+    Channels define the direction of flow of values.
   </p>
   
 
@@ -83,12 +89,6 @@
   <div class="code"><pre>a chan   int  // We can both read and write values to a
 b chan&lt;- int  // We can only write to b
 c &lt;-chan int  // We can only read from c</pre></div>
-  
-
-  
-  <p>
-    Channels make it easy to communicate between goroutines.
-  </p>
   
 
   
@@ -197,8 +197,11 @@ c &lt;-chan int  // We can only read from c</pre></div>
   
   <p>
     It is often difficult to visualize what is going on in concurrent applications.
-<br>
+  </p>
+  
 
+  
+  <p>
     Go lets you inject code before compilation and add extra function calls for output, and this can be helpful for generating visualisations for code.
   </p>
   

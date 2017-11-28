@@ -39,14 +39,23 @@
   
   <p>
     Any type that impliments a function that returns a string can be thought of, or used, as an error.
-<br>
+  </p>
+  
 
+  
+  <p>
     Because error is an interface, creating custom error types is easy, with as much or as little detail as needed. 
-<br>
+  </p>
+  
 
+  
+  <p>
     Because functions can return multiple values, at least one of the returned values are for errors.
-<br>
+  </p>
+  
 
+  
+  <p>
     Must do something with the error returned, using a variable or an underscore to intentionally ignore the error.
   </p>
   
@@ -154,7 +163,7 @@ if err != nil {
 <span num="6">    fmt.Println(&#34;Hello World&#34;)</span>
 <span num="7">    defer fmt.Println(&#34;First Deferred Print Line&#34;)</span>
 <span num="8">    fmt.Println(&#34;This will print before the first defer&#34;)</span>
-<span num="9">    defer fmt.Println(&#34;Second Deffered Print Line&#34;)</span>
+<span num="9">    defer fmt.Println(&#34;Second Deferred Print Line&#34;)</span>
 <span num="10">    fmt.Println(&#34;Finally, we&#39;ll leave the function.&#34;)</span>
 <span num="11">}</span>
 </pre>
